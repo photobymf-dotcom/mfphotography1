@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie — mfPhotography</title>
+<meta name="description" content="Galerie fotografií Martina Faltyse: astrofotografie, letecké snímky, akce a portréty.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+
+<div class="site-wrap">
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">mf<span>Photography</span></a>
+      <button class="nav-toggle" aria-label="Otevřít menu">☰</button>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="galerie.html" class="active">Galerie</a>
+        <a href="o-mne.html">O mně</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-sub">
+    <div class="container">
+      <span class="eyebrow reveal">Galerie</span>
+      <h1 class="reveal">Výběr z portfolia</h1>
+      <p class="lede reveal">Čtyři žánry, jedna obloha nad nimi. Filtrujte podle kategorie, nebo procházejte vše.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:56px">
+    <div class="container">
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">Vše</button>
+        <button class="filter-btn" data-filter="astro">Astro</button>
+        <button class="filter-btn" data-filter="aerial">Letecké</button>
+        <button class="filter-btn" data-filter="event">Akce</button>
+        <button class="filter-btn" data-filter="portrait">Portréty</button>
+      </div>
+
+      <div class="masonry" id="astro">
+        <figure class="frame" data-cat="astro">
+          <img src="assets/images/astro/milky-way-tree.webp" alt="Mléčná dráha nad smrkovým lesem" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Astro</span><span>Šumava, letní noc</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="astro">
+          <img src="assets/images/astro/milky-way-church.webp" alt="Mléčná dráha nad siluetou kapličky" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Astro</span><span>Kaplička pod hvězdami</span></figcaption>
+        </figure>
+
+        <figure class="frame" data-cat="aerial" id="aerial">
+          <img src="assets/images/aerial/castle-village.webp" alt="Letecký pohled na hradní zříceninu a vesnici" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Letecké</span><span>Hrad nad údolím</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="aerial">
+          <img src="assets/images/aerial/castle-ruins.webp" alt="Detailní letecký pohled na hradní zříceninu" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Letecké</span><span>Zřícenina zblízka</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="aerial">
+          <img src="assets/images/aerial/forest-river.webp" alt="Letecký pohled na řeku protékající lesem" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Letecké</span><span>Řeka v lese, kolmý pohled</span></figcaption>
+        </figure>
+
+        <figure class="frame" data-cat="event" id="event">
+          <img src="assets/images/event/camera-concert.jpg" alt="Fotograf s bleskem Godox na koncertě" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Zákulisí koncertu</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/festival-girls.jpg" alt="Tři dívky na letním festivalu" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Letní festival</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/graduation-group.jpg" alt="Skupinová fotografie maturantů na jevišti" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Maturitní ples</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/forestry-group.webp" alt="Skupinová fotografie v lesnických uniformách" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Slavnostní nástup</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/trumpet-player.jpg" alt="Trumpetista na koncertě" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Dechová sekce živě</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/old-man-guitarist.jpg" alt="Zpěvák s kytarou na pódiu" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Kapelník v akci</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/guitarist-telecaster.jpg" alt="Kytarista s telecasterem" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Sólo na telecaster</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/smiling-drummer.jpg" alt="Usmívající se bubeník za soupravou" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Bubeník, poslední skladba</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/bw-singer-guitar.jpg" alt="Černobílý portrét zpívajícího kytaristy" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Černobílá, hlavní vokál</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/bw-vocalist-mic.jpg" alt="Černobílý portrét zpěváka s mikrofonem" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Černobílá, refrén</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/child-watching-stage.jpg" alt="Dítě sledující koncert zezadu" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Pohled z davu</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/festival-woman-sunglasses.jpg" alt="Žena s dětmi na letní slavnosti" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Letní slavnost ve městě</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/vintage-citroen.jpg" alt="Historický vůz Citroën H na srazu veteránů" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Sraz veteránů</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="event">
+          <img src="assets/images/event/market-keychains.jpg" alt="Ruční výrobky na farmářském trhu" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Akce</span><span>Řemeslný trh</span></figcaption>
+        </figure>
+
+        <figure class="frame" data-cat="portrait" id="portrait">
+          <img src="assets/images/portrait/football-player.webp" alt="Portrét fotbalisty v dresu Horažďovic" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Portrét</span><span>FK Horažďovice</span></figcaption>
+        </figure>
+        <figure class="frame" data-cat="portrait">
+          <img src="assets/images/portrait/cowboy-hat-man.webp" alt="Portrét muže v klobouku a kožené bundě" loading="lazy">
+          <figcaption class="frame-tag"><span class="cat">Portrét</span><span>Studiové světlo, venku</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 mfPhotography — Martin Faltys</span>
+      <span><a href="https://www.instagram.com/martinfaltys.photo?igsh=ZXMxaGQ4cHA0dDZ4" target="_blank" rel="noopener">Instagram</a> · <a href="kontakt.html">Napište mi</a></span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — mfPhotography</title>
+<meta name="description" content="Kontaktujte Martina Faltyse — mfPhotography.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+
+<div class="site-wrap">
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">mf<span>Photography</span></a>
+      <button class="nav-toggle" aria-label="Otevřít menu">☰</button>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="o-mne.html">O mně</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-sub">
+    <div class="container">
+      <span class="eyebrow reveal">Kontakt</span>
+      <h1 class="reveal">Domluvme se na focení</h1>
+      <p class="lede reveal">Ať už jde o noční focení Mléčné dráhy, let s dronem, reportáž z akce nebo portrét — napište mi, co máte v plánu.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:24px">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <ul class="contact-list">
+          <li>
+            <span class="k">E-mail</span>
+            <span class="v"><a href="mailto:photobymf@gmail.com">photobymf@gmail.com</a></span>
+          </li>
+          <li>
+            <span class="k">Telefon</span>
+            <span class="v"><a href="tel:+420722935251">+420 722 935 251</a></span>
+          </li>
+          <li>
+            <span class="k">Působiště</span>
+            <span class="v">Okolí Horažďovic</span>
+          </li>
+          <li>
+            <span class="k">Instagram</span>
+            <span class="v"><a href="https://www.instagram.com/martinfaltys.photo?igsh=ZXMxaGQ4cHA0dDZ4" target="_blank" rel="noopener">@martinfaltys.photo</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" action="mailto:photobymf@gmail.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name">Jméno</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Zpráva</label>
+          <textarea id="message" name="message" required placeholder="Popište, co byste chtěli vyfotit — datum, místo, typ focení..."></textarea>
+        </div>
+        <button type="submit" class="btn">Odeslat zprávu</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 mfPhotography — Martin Faltys</span>
+      <a href="galerie.html">Zpět do galerie</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
